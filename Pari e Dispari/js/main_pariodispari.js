@@ -35,16 +35,16 @@ let numeroPc = Math.floor(Math.random() * 5) + 1;
 let somma = numeroUtente + numeroPc;
 
 // funzione per determinare se la somma dei due numeri è pari o dispari
-function pariDispari(numero) {
+function isPari(numero) {
     if (numero % 2 === 0) {
         return ('pari');
-    } else {
-        return ('dispari');
     }
+
+    return ('dispari');
 }
 
 
-let risultato = pariDispari(somma);
+let risultato = isPari(somma);
 
 // determiniamo il vincitore
 if (sceltaUtente === risultato) {
